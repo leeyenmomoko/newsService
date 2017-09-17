@@ -200,3 +200,31 @@
 ### 東森新聞詳細內容
 
 - endpoint : `http://api.news.ebc.net.tw/api/get_news_data/{{sid}}`
+
+``` json
+{
+    "status": true,
+    "rows": {
+        "releate_keyword_id": "{78683}{78632}{78626}{78599}{78595}{78580}{78564}{78544}{78469}",
+        "embedded_code": "",
+        "cname": "社會",
+        "summary": "14日早上約9點，一名網友在華山文創園區後的停車場，目擊暴力事件，並將影片PO到「爆料公社」，「老實說不知道怎麼定義這件事，驚悚片，喜劇，搞笑片，動作片…大家自己決定吧」，引起網友熱烈迴響。原PO表示，一名穿著雨衣、戴全罩式安全帽的男子本來坐在機車上吃早餐，卻突然對一位路過的正妹大譙髒話，「XXX，臭婊子還躲，信不信我砍你」，女子大聲尖叫，原PO這時趕緊拿出手機錄影。",
+        "sid": "78721",
+        "subject": "【影片】現世報！男揮拳正妹頭部 下一秒 「掰咖+手殘」下場超慘",
+        "title_img": "https://ebcnews.s3.amazonaws.com/images/2017/09/17/15056186871293FnANIEUb41.jpg",
+        "video_news": "",
+        "youtube_url": "",
+        "views": "49",
+        "clicks": "0",
+        "releate_id": "{78683}{78632}{78626}{78599}{78595}{78580}{78564}{78544}{78469}",
+        "surveryid": 0,
+        "style": 0,
+        "new_type": "imagetext",
+        "news_url": "http://m.news.ebc.net.tw/news_app.php?nid=78721"
+    }
+}
+```
+
+## 搜尋東森關鍵字新聞
+
+- endpoint : `http://api.news.ebc.net.tw/api//get_search/{{關鍵字}}/1/merge`
